@@ -364,7 +364,7 @@ header a {
   text-align: center;
 }
 
-.menu--note-enchantee h1 {
+.menu--note-enchantee h2 {
   font-size: 50px;
 }
 
@@ -457,7 +457,7 @@ article {
   padding-bottom: 30px;
 }
 
-.menu--chic-francaise h1 {
+.menu--chic-francaise h2 {
   padding-top: 120px;
   font-size: 60px;
   background: -webkit-linear-gradient(left, #BDA64D, #6279D7);
@@ -488,7 +488,7 @@ article {
   padding-bottom: 30px;
 }
 
-.menu--delices--papilles h1 {
+.menu--delices--papilles h2 {
   padding-top: 120px;
   font-size: 60px;
   background: -webkit-linear-gradient(left, #1636B5, #2A8CD2);
@@ -507,7 +507,7 @@ article {
   padding-bottom: 30px;
 }
 
-.menu--palette--gout h1 {
+.menu--palette--gout h2 {
   padding-top: 120px;
   font-size: 60px;
   background: -webkit-linear-gradient(left, #24782F, #3AC14C);
@@ -595,6 +595,18 @@ article {
     width: 300px;
     font-size: 25px;
   }
+  .menu--note-enchantee h2 {
+    font-size: 45px;
+  }
+  .menu--chic-francaise h2 {
+    font-size: 45px;
+  }
+  .menu--delices--papilles h2 {
+    font-size: 45px;
+  }
+  .menu--palette--gout h2 {
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -623,7 +635,7 @@ article {
     width: 180px;
     font-size: 15px;
   }
-  .menu--note-enchantee h1 {
+  .menu--note-enchantee h2 {
     font-size: 30px;
   }
   .menu--note-enchantee i {
@@ -637,7 +649,7 @@ article {
     margin-left: 9.5px;
     font-size: 10px;
   }
-  .menu--chic-francaise h1 {
+  .menu--chic-francaise h2 {
     font-size: 30px;
   }
   .menu--chic-francaise .menu_prix {
@@ -648,7 +660,7 @@ article {
     margin-left: 12px;
     font-size: 11px;
   }
-  .menu--delices--papilles h1 {
+  .menu--delices--papilles h2 {
     font-size: 30px;
   }
   .menu--delices--papilles .menu_prix {
@@ -659,7 +671,7 @@ article {
     margin-left: 11px;
     font-size: 11px;
   }
-  .menu--palette--gout h1 {
+  .menu--palette--gout h2 {
     font-size: 30px;
   }
   .menu--palette--gout .menu_plat {
