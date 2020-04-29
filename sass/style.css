@@ -40,8 +40,8 @@ main {
 }
 
 main section {
-  height: 600px;
-  width: 434px;
+  height: 640px;
+  width: 470px;
   border: 1px solid white;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -68,13 +68,10 @@ main section .fas {
   -webkit-text-fill-color: transparent;
 }
 
-a {
-  text-decoration: none;
-}
-
-button {
+main button {
   font-size: 35px;
-  width: 450px;
+  text-align: center;
+  width: 480px;
   margin-bottom: 40px;
   border-radius: 10px;
   background-color: #579C87;
@@ -84,12 +81,14 @@ button {
           box-shadow: 1px 1px 10px #555;
 }
 
-button .animation {
+main button .animation {
   font-size: 110%;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
   -webkit-animation-name: boutton;
           animation-name: boutton;
 }
@@ -140,6 +139,10 @@ button .animation {
   100% {
     opacity: 1;
   }
+}
+
+main a {
+  text-decoration: none;
 }
 
 .animationloop {
@@ -351,6 +354,27 @@ footer a:hover {
   margin-right: 20px;
 }
 
+header a {
+  text-decoration: none;
+  color: #FDCB46;
+  font-size: 40px;
+}
+
+.menu--note-enchantee .menu_header {
+  text-align: center;
+}
+
+.menu--note-enchantee h1 {
+  font-size: 50px;
+}
+
+.menu--note-enchantee i {
+  background: -webkit-linear-gradient(left, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 120px;
+}
+
 .menu--note-enchantee {
   width: 100%;
   background-color: #FCDFDB;
@@ -359,7 +383,7 @@ footer a:hover {
 
 .line-right {
   float: right;
-  margin-right: 18vw;
+  margin-right: 15vw;
   margin-bottom: -20px;
 }
 
@@ -367,7 +391,7 @@ footer a:hover {
   float: left;
   position: absolute;
   margin-top: -40px;
-  margin-left: 14%;
+  margin-left: 10%;
 }
 
 img {
@@ -378,23 +402,6 @@ img {
 li {
   list-style-type: none;
   display: inline;
-}
-
-.menu_header {
-  margin-left: 35%;
-}
-
-.menu_header i {
-  margin-left: 8vw;
-  font-size: 140px;
-  margin-top: 30px;
-  background: -webkit-linear-gradient(left, red, orange);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.menu_header h1 {
-  font-size: 40px;
 }
 
 .menu_prix {
@@ -411,7 +418,7 @@ li {
   background-size: 0% 100%;
   -webkit-transition: background-size .3s;
   transition: background-size .3s;
-  margin-left: 40%;
+  margin-left: 38%;
 }
 
 .menu-section:hover {
@@ -456,6 +463,7 @@ article {
   background: -webkit-linear-gradient(left, #BDA64D, #6279D7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .menu_catégorie__entrée {
@@ -471,7 +479,7 @@ article {
 }
 
 .menu--chic-francaise .line-right {
-  margin-right: 10vw;
+  margin-right: 4.5vw;
 }
 
 .menu--delices--papilles {
@@ -486,10 +494,11 @@ article {
   background: -webkit-linear-gradient(left, #1636B5, #2A8CD2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
 .menu--delices--papilles .line-right {
-  margin-right: 11vw;
+  margin-right: 9.5vw;
 }
 
 .menu--palette--gout {
@@ -504,21 +513,20 @@ article {
   background: -webkit-linear-gradient(left, #24782F, #3AC14C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
-@media screen and (max-width: 1300px) {
-  .menu-section {
-    margin-left: 38%;
+.menu--palette--gout .line-right {
+  margin-right: 10.5vw;
+}
+
+@media screen and (min-width: 1300px) {
+  main section {
+    margin-right: 70px;
   }
 }
 
 @media screen and (max-width: 1060px) {
-  img {
-    width: 22vw;
-  }
-}
-
-@media screen and (max-width: 1021px) {
   .menu_plat {
     font-size: 18px;
   }
@@ -527,13 +535,13 @@ article {
   }
 }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 952px) {
   .menu-section {
     margin-left: 36%;
     font-size: 19px;
   }
   .menu_plat {
-    font-size: 13px;
+    font-size: 14px;
     margin-left: 25px;
   }
   .menu_prix {
@@ -544,15 +552,12 @@ article {
   .line-right {
     margin-top: -10px;
   }
-  .menu_header {
-    margin-left: 90px;
-  }
-  .menu_header i {
-    margin-left: 90px;
+  .line-left {
+    margin-left: 9.5%;
   }
 }
 
-@media screen and (max-width: 514px) {
+@media screen and (max-width: 536px) {
   main {
     position: relative;
     margin: 0;
@@ -561,10 +566,11 @@ article {
   }
   main section {
     width: 310px;
+    height: 580px;
   }
   button {
-    width: 260px;
-    font-size: 20px;
+    width: 300px;
+    font-size: 25px;
   }
   #menu1 i {
     margin-left: 110px;
@@ -576,7 +582,7 @@ article {
     padding-left: 0px;
   }
   .menu_plat {
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 25px;
   }
   .menu-section {
@@ -585,26 +591,25 @@ article {
   img {
     width: 16vw;
   }
-  .menu__header__name {
-    margin-left: -25px;
+  main button {
+    width: 300px;
+    font-size: 25px;
   }
 }
 
-@media screen and (max-width: 350px) {
-  .menu_header {
-    margin-left: 0px;
-    font-size: 25px;
-  }
-  .menu__header__name {
-    margin-left: 15px;
-  }
+@media screen and (max-width: 420px) {
   .menu-section {
     font-size: 13px;
   }
-  .menu_prix {
-    font-size: 10px;
-    margin-right: 9%;
-    margin-top: 10px;
+  .menu_plat {
+    font-size: 10.5px;
+    margin-left: 7px;
+  }
+  .menu_footer p {
+    font-size: 25px;
+  }
+  .menu_footer i {
+    font-size: 70px;
   }
   footer {
     margin-top: 15px;
@@ -613,6 +618,56 @@ article {
   }
   a {
     font-size: 14px;
+  }
+  main button {
+    width: 180px;
+    font-size: 15px;
+  }
+  .menu--note-enchantee h1 {
+    font-size: 30px;
+  }
+  .menu--note-enchantee i {
+    font-size: 60px;
+  }
+  .menu--note-enchantee .menu_prix {
+    margin-right: 12px;
+    font-size: 9.5px;
+  }
+  .menu--note-enchantee .menu_plat {
+    margin-left: 9.5px;
+    font-size: 10px;
+  }
+  .menu--chic-francaise h1 {
+    font-size: 30px;
+  }
+  .menu--chic-francaise .menu_prix {
+    margin-right: 12px;
+    font-size: 11px;
+  }
+  .menu--chic-francaise .menu_plat {
+    margin-left: 12px;
+    font-size: 11px;
+  }
+  .menu--delices--papilles h1 {
+    font-size: 30px;
+  }
+  .menu--delices--papilles .menu_prix {
+    margin-right: 11px;
+    font-size: 11px;
+  }
+  .menu--delices--papilles .menu_plat {
+    margin-left: 11px;
+    font-size: 11px;
+  }
+  .menu--palette--gout h1 {
+    font-size: 30px;
+  }
+  .menu--palette--gout .menu_plat {
+    margin-left: 11px;
+    font-size: 12px;
+  }
+  .menu--palette--gout .menu_prix {
+    margin-right: 12px;
   }
 }
 /*# sourceMappingURL=style.css.map */
