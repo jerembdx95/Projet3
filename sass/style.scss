@@ -60,31 +60,34 @@ main
             -webkit-text-fill-color: transparent;
             }
         }
-        }
+        button{ 
+            
+            font-size: 35px;
+            text-align: center;
+            width: 480px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            background-color: #579C87;
+            color: #FDCB46;
+            font-family: 'Roboto', sans-serif;
+            box-shadow: 1px 1px 10px #555;
+                .animation{
+                    font-size: 110%;
+                     @include animationbutton(); 
         
-a{
-    text-decoration: none;
-}
-
-button{
-    
-    font-size: 35px;
-    width: 450px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    background-color: #579C87;
-    color: #FDCB46;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 1px 1px 10px #555;
-    .animation{
-        font-size: 110%;
-         @include animationbutton();
+                }
+        
     }
+    a{
+        text-decoration: none;
+        }
+                
 }
 
     .animationloop{
         @include effetzoom();
     }
+
 
 #menu1
 {
@@ -169,6 +172,31 @@ footer{
 
     ///////////////////////////////* PAGE 1 *////////////////////////////////////////
 
+    header{
+        a{
+            text-decoration: none;
+            color: $ColorYellow;
+            font-size: 40px;
+        }
+    }
+    
+    .menu--note-enchantee{
+        .menu_header{
+            text-align: center;
+
+        }
+        h1{
+            font-size: 50px;
+        }
+        i{
+            background: -webkit-linear-gradient(left, red, orange);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 120px;
+        }
+    }
+
+
     .menu--note-enchantee
     {
         width: 100%;
@@ -178,7 +206,7 @@ footer{
 
     .line-right{
        float: right;
-       margin-right: 18vw;
+       margin-right: 15vw;
        margin-bottom: -20px;
     }
 
@@ -186,7 +214,7 @@ footer{
        float: left;
         position: absolute;
         margin-top: -40px;
-        margin-left: 14%;
+        margin-left: 10%;
        
      }
      img{
@@ -201,20 +229,7 @@ footer{
       display: inline;
   }
 
-    .menu_header{
-        margin-left: 35%;
-        i{
-            margin-left: 8vw;
-            font-size: 140px;
-            margin-top: 30px;
-            background: -webkit-linear-gradient(left, red, orange);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        h1{
-            font-size: 40px;
-        }   
-    }
+    
 
     .menu_prix { font-weight: bold;
                float: right;
@@ -266,8 +281,10 @@ article{
         background: -webkit-linear-gradient(left,#BDA64D,#6279D7);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-align: center;
     }
 }
+
 
 .menu_catégorie__entrée{
     color: #BDA64D;
@@ -281,7 +298,7 @@ color: #6279D7;
 }
 .menu--chic-francaise{
     .line-right{
-                margin-right: 10vw;
+                margin-right: 4.5vw;
         }
     }
 
@@ -298,10 +315,11 @@ color: #6279D7;
         background: -webkit-linear-gradient(left,#1636B5,#2A8CD2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-align: center;
     }
 
     .line-right{
-        margin-right: 11vw;
+        margin-right: 9.5vw;
     }
 }
 
@@ -317,12 +335,24 @@ color: #6279D7;
         background: -webkit-linear-gradient(left,#24782F,#3AC14C);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-align: center;
     }
+    .line-right{
+        margin-right: 10.5vw;
+    }
+    
 }
 
 
 ///////////////////////////////Responsive/////////////////////////////////////////////////////////////////
 
+
+@media screen and (min-width: 1300px)
+{
+    main section{
+        margin-right: 70px;
+    }
+}
 
 @media screen and (max-width: 1060px)
 {
@@ -335,19 +365,21 @@ color: #6279D7;
     .menu_catégorie{
         margin-right: -20px;
     }
+    
 }
 
 ////////* Petite Résolution *//////////////////
 
-@media screen and (max-width: 925px)
+@media screen and (max-width: 952px)
 {   
+    
     .menu-section {
         margin-left: 36%;
         font-size: 19px; 
     }
     .menu_plat{
         
-       font-size: 13px;
+       font-size: 14px;
         margin-left: 25px;
     }
     .menu_prix { 
@@ -360,17 +392,16 @@ color: #6279D7;
         margin-top: -10px;
         
     }
-    .menu_header{
-        margin-left: 90px;
-        i{
-            margin-left: 90px;
-        }
+    .line-left{ 
+        margin-left: 9.5%;
+        
     }
-    }   
+    
+}   
 
 /////////* Mobile résolution *////////////
 
-@media screen and (max-width: 514px)
+@media screen and (max-width: 536px)
 {
   main{
       position: relative;
@@ -380,12 +411,15 @@ color: #6279D7;
     
     section{
       width: 310px;
+      height: 580px;
     }
-}
+    }
+    
     button{
-        width: 260px;
-        font-size: 20px;
+        width: 300px;
+        font-size: 25px;
         }
+    
 #menu1 i{
     margin-left: 110px;
         }
@@ -400,7 +434,7 @@ color: #6279D7;
 
     .menu_plat{
         
-        font-size: 12px;
+        font-size: 14px;
          margin-left: 25px;
      }
 
@@ -411,32 +445,35 @@ color: #6279D7;
     img{
         width: 16vw;
     }
-    .menu__header__name{
-        margin-left: -25px;
-
+    main button{ 
+        width: 300px;
+        font-size: 25px;
+        
     }
+    
 }
 
-@media screen and (max-width: 350px)
+@media screen and (max-width: 420px)
 {
-    .menu_header{
-         
-            margin-left: 0px;
-            font-size: 25px;
-        }
-    .menu__header__name{
-        margin-left: 15px;
-    }
-            
+        
     .menu-section{
         font-size: 13px;
     }
-
-    .menu_prix { 
+    .menu_plat { 
         
-        font-size: 10px;
-        margin-right: 9%;
-        margin-top: 10px;  
+        font-size: 10.5px;
+        margin-left: 7px;
+         
+    }
+
+    .menu_footer{
+        p{
+            font-size: 25px;
+        }
+        i{
+            font-size: 70px;
+        }
+
     }
 
     footer{
@@ -448,6 +485,67 @@ color: #6279D7;
      }
 
      a{
-        font-size: 14px;}
+        font-size: 14px;
+    }
+    main button{ 
+        width: 180px;
+        font-size: 15px;
+    }
+    .menu--note-enchantee{
+        h1{
+            font-size: 30px;
+        }
+        i{  
+            font-size: 60px;
+        }
+        .menu_prix{
+            margin-right: 12px;
+            font-size: 9.5px;
+        }
+        .menu_plat{
+            margin-left: 9.5px;
+            font-size: 10px;
+        }
+    }
+    .menu--chic-francaise{
+        
+        h1{
+            
+            font-size: 30px;
+        }
+        .menu_prix{
+            margin-right: 12px;
+            font-size: 11px;
+        }
+        .menu_plat{
+            margin-left: 12px;
+            font-size: 11px;
+        }
+    }
+    .menu--delices--papilles{
+        h1{
+            font-size: 30px;
+        }
+        .menu_prix{
+            margin-right: 11px;
+            font-size: 11px;
+        }
+        .menu_plat{
+            margin-left: 11px;
+            font-size: 11px;
+        }
+    }
+    .menu--palette--gout{
+        h1{
+            font-size: 30px;
+        }
+        .menu_plat{
+            margin-left: 11px;
+            font-size: 12px;
+        }
+        .menu_prix{
+            margin-right: 12px;
+        }
+    }
+} 
 
-}
