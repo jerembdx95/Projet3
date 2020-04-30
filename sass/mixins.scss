@@ -17,42 +17,11 @@
     
 }}
 
-@mixin animationbutton{
-
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-name: boutton;
-    @keyframes boutton {
-        0% {
-            opacity: 0;
-          }
-        10% {
-            opacity: 0.1;
-          }
-        
-        20% {
-            opacity: 0.2;
-            
-          }
-          30% {
-            opacity: 0.3;
-            
-          }
-        
-        50% {
-          opacity: 0.5;
-          
-        }
-        70% {
-            opacity: 0.7;
-            
-          }
-
-        100%{
-            opacity: 1;
-            
-        }
-      }
+@mixin animationboutton
+{
+    animation: typing 1.2s steps(5, end) infinite;
+      
+}
 
 
 }
