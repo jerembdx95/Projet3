@@ -17,14 +17,6 @@
     
 }}
 
-@mixin animationboutton
-{
-    animation: typing 1.2s steps(5, end) infinite;
-      
-}
-
-
-}
 
 @mixin effetwizz {
     &:hover {
