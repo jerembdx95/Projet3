@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* VAriable */
 /* Mixin */
+/* effet zoom */
+/* effet sur footer*/
+/* effet soulignement sur page menu */
 /* Page Principale */
 * {
   font-size: 20px;
@@ -70,7 +73,7 @@ main section .fas {
 
 main button {
   font-size: 35px;
-  text-align: center;
+  margin-left: center;
   width: 480px;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -81,67 +84,50 @@ main button {
           box-shadow: 1px 1px 10px #555;
 }
 
-main button .animation {
-  font-size: 110%;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-name: boutton;
-          animation-name: boutton;
+main .animation:after {
+  display: inline-block;
+  -webkit-animation: point steps(1, end) 1s infinite;
+          animation: point steps(1, end) 1s infinite;
+  content: '';
 }
 
-@-webkit-keyframes boutton {
+@-webkit-keyframes point {
   0% {
-    opacity: 0;
+    content: '';
   }
-  10% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  30% {
-    opacity: 0.3;
+  25% {
+    content: '.';
   }
   50% {
-    opacity: 0.5;
+    content: '..';
   }
-  70% {
-    opacity: 0.7;
+  75% {
+    content: '...';
   }
   100% {
-    opacity: 1;
+    content: '';
   }
 }
 
-@keyframes boutton {
+@keyframes point {
   0% {
-    opacity: 0;
+    content: '';
   }
-  10% {
-    opacity: 0.1;
-  }
-  20% {
-    opacity: 0.2;
-  }
-  30% {
-    opacity: 0.3;
+  25% {
+    content: '.';
   }
   50% {
-    opacity: 0.5;
+    content: '..';
   }
-  70% {
-    opacity: 0.7;
+  75% {
+    content: '...';
   }
   100% {
-    opacity: 1;
+    content: '';
   }
 }
 
-main a {
+a {
   text-decoration: none;
 }
 
