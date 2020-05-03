@@ -1,5 +1,7 @@
 /* Mixin */
 
+/* effet zoom */
+
 @mixin effetzoom {-webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .2s ease-in-out;
@@ -15,13 +17,33 @@
     transform: scale(1.1);
     opacity: 0.6;
     
-}}
+}
+}
+/* effet points suspenssion */
 
+@mixin button{ 
+    
+    animation: typing 1s steps(5,end) infinite;
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+
+    @keyframes typing {
+        
+        0% { opacity: 0;}
+        20% { opacity: 0.2;} 
+        40% { opacity: 0.4;} 
+        60% { opacity: 0.6;} 
+        80% { opacity: 0.8;} 
+        100% { opacity: 1;} 
+    }
+    }
+
+/* effet sur footer*/
 
 @mixin effetwizz {
     &:hover {
         animation: shake 0.5s;
-    animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
       }
       
       @keyframes shake {
@@ -39,9 +61,10 @@
       }
 }
 
+/* effet soulignement sur page menu */
+
 @mixin UnderlineEffect
 {
-    
     text-decoration: none;
     background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, rgba(0, 0, 0, 0.5) 4px, transparent 5px)
     no-repeat;
@@ -50,6 +73,7 @@
 
     &:hover{
         background-size: 100% 100%;
-        
+ 
     }
 }
+
