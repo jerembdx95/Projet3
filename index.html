@@ -1,421 +1,63 @@
-@import 'variable';
-@import 'mixins';
-
-/* Page Principale */
-*
-{
-    font-size: 18px;
-}
-body
-{
-background-color:#579C87;
-margin: 0;
-}
-
-header
-{  
-width: 100%;
-    h1{
-    padding-bottom: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: $ColorYellow;
-    font-size: 50px;
-    font-family: 'Roboto', sans-serif;
-    } 
-} 
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-}
-.container2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; 
-}
-
-main
-{
-width: 100%;
-background-color: white;
-border: 2px solid white;
-height: 84.43%;
-    section{ 
-    height: $HmenuPageP;
-    width: $WmenuPageP;
-    border: 1px solid white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 1px 1px 10px #555;
-        h2 {
-        text-align: center;
-        font-size: 40px;
-        }
-        h3 {text-align: center;
-        font-size: 40px;
-        }
-        .fas{
-        margin-left: 170px;
-        margin-top: 110px;
-        font-size: 90px;
-        background: -webkit-linear-gradient(left, red, orange);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        }
-    }
-    button{ 
-    font-size: 35px;
-    width: 480px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    background-color: #579C87;
-    color: #FDCB46;
-    font-family: 'Roboto', sans-serif;
-    box-shadow: 1px 1px 10px #555;
-        .animation{
-        @include button();
-        font-size: 40px;
-        }
-        .animation2{
-        @include button();
-        animation-delay: 0.75s;
-        -webkit-animation-delay: 0.75s;
-        font-size: 40px;
-        }
-        .animation3{
-        @include button();
-        animation-delay: 1s;
-        -webkit-animation-delay: 1s;
-        font-size: 40px;
-        }
-    }
-    .button{
-        text-align: center;
-    }
-}
-a{
-text-decoration: none;
-} 
-
-.animationloop{
-@include effetzoom();
-}
-
-#menu1
-{
-background-color: $colormenu1;
-}
-h2, h3{
-font-family: 'Satisfy', cursive;
-color: black; 
-}
-
-#menu2
-{
-background-color: $colormenu2;
-h2, h3{
-font-family: 'Crimson Text', serif;
-}
-h2{
-margin-top: $MarginTOpH2Menu;
-background: -webkit-linear-gradient(left,#BDA64D,#6279D7);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-h3{
-color: #BDA64D;
-}
-}
-#menu3{
-background-color: $colormenu3;
-    h2{
-    margin-top: $MarginTOpH2Menu;
-    background: -webkit-linear-gradient(left,#1636B5,#2A8CD2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-    h3{
-    color: #2A8CD2;
-    }
-    h2, h3{ 
-    font-family: 'Dancing Script', cursive;
-    }
-}
-#menu4
-{
-background-color: $colormenu4;
-    h2{
-    margin-top: $MarginTOpH2Menu;
-    background: -webkit-linear-gradient(left,#24782F,#3AC14C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-    h3{
-    color: #3AC14C;
-    }
-    h2, h3{ 
-    font-family: 'Caveat', cursive;
-    }
-}
-
-footer{
-font-family: 'Roboto', sans-serif;
-position: sticky;
-bottom: 0;
-background-color: $ColorGREEN;
-display: flex;
-justify-content: space-between;
-padding: 15px;
-    a{
-    @include effetwizz();
-    color: $ColorYellow;
-    margin-left: 20px;
-    }
-}
-
-///////////////////////////////* PAGE 1 *////////////////////////////////////////
-
-header{
-    a{
-    text-decoration: none;
-    color: $ColorYellow;
-    font-size: 60px;
-    }
-}
-.menu--note-enchantee{
-    .menu_header{
-    text-align: center;
-    padding-top: 25px;
-    }
-    h2{
-    font-size: 50px;
-    }
-    i{
-    background: -webkit-linear-gradient(left, red, orange);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 120px;
-    }
-}
-
-.menu--note-enchantee{
-    background-color: $colormenu1;
-    h3{
-        @include UnderlineEffect();
-    }
-}
-
-.menu_catégorie{
-    display: flex;
-    justify-content: center;  
-}
-.menu_intitulé{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-left: 12%;
-    margin-right: 13%;
-}
-
-.line-right{
-    margin-top: 25px;
-    margin-right: 1%;
-}
-.line-left{
-    margin-top: 25px;
-    margin-left: 1%;
-}
-
-
-.menu_footer{
-text-align: center;
-    i{
-    font-size: 100px;
-    margin-top: 30px; 
-    background: -webkit-linear-gradient(left, red, orange);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    }
-    p{
-    font-size: 40px;
-    padding-bottom: 30px;
-    }
-}
-
-article{
-padding-bottom: 60px;
-}
-
-////////////////////////////////////////////* Page2 *////////////////////////////////:
-
-.menu--chic-francaise{
-background-color: $colormenu2;
-font-family: 'Crimson Text', serif;
-padding-bottom: 30px;
-    h2{
-    padding-top: 120px;
-    font-size: 60px;
-    background: -webkit-linear-gradient(left,#BDA64D,#6279D7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    }
-}
-
-.menu_catégorie__entrée{
-color: #BDA64D;
-}
-
-.menu_catégorie__plat{
-color: #eeccff;
-}
-.menu_catégorie__dessert{
-color: #6279D7;
-}
-
-////////////////////////////////////////////* Page3 *////////////////////////////////////////////////////
-
-.menu--delices--papilles{
-background-color: $colormenu3;
-font-family: 'Dancing Script', cursive;
-padding-bottom: 30px;
-    h2{
-    padding-top: 120px;
-    font-size: 60px;
-    background: -webkit-linear-gradient(left,#1636B5,#2A8CD2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    }
-}
-
-///////////////////////////////////////////////////////* Page4 *///////////////////////////////////////
-
-.menu--palette--gout{
-background-color: $colormenu4;
-font-family: 'Caveat', cursive;
-padding-bottom: 30px;
-    h2{
-    padding-top: 120px;
-    font-size: 60px;
-    background: -webkit-linear-gradient(left,#24782F,#3AC14C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    }
-}
-///////////////////////////////Responsive/////////////////////////////////////////////////////////////////
-
-
-@media screen and (max-width: 900px)
-{
-    .menu_intitulé{
-        margin-left: 4%;
-    }
-    img{
-        width: 35vw;
-    }
-}
-
-
-/////////* Mobile résolution *////////////
-
-@media screen and (max-width: 536px)
-{
-    
-    main{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    text-align: start;
-        section{
-        width: 310px;
-        height: 580px;
-        }
-    }
-    button{
-    width: 300px;
-    font-size: 25px;
-    }
-    #menu1 i{
-    margin-left: 110px;
-    }
-    .menu_plat{
-        margin-right: 30px;
-    }
-    main button{ 
-    width: 350px;
-    font-size: 20px; 
-    }
-}
-
-@media screen and (max-width: 420px)
-{
-    header{
-        a{
-        font-size: 35px;
-        }
-        }
-    img{
-        width: 30vw;
-    }
-    .menu--note-enchantee h2
-    {
-        font-size: 25px;
-    }
-    article{
-        padding-bottom: 30px;
-    }
-
-    .menu--chic-francaise h2{
-        font-size: 30px;
-        padding-top: 60px;
-    }
-    .menu--delices--papilles h2
-    {
-        font-size: 30px;
-        padding-top: 60px;
-    }
-    .menu--palette--gout h2
-    {
-        font-size: 30px;
-        padding-top: 60px;
-    }
-
-    .menu_intitulé{
-        padding-left: 10px;
-    }
-    .menu_plat{
-        font-size: 13px;
-        margin-right: 20px;
-    }
-    .menu_prix{
-        font-size: 13px;
-    }
-    .menu_footer{
-        p{
-        font-size: 25px;
-        }
-        i{
-        font-size: 70px;
-        }
-    }
-
-    footer{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 0px;
-    }
-
-    a{
-    font-size: 14px;
-    }
-    main button{ 
-    width: 180px;
-    font-size: 18px;
-    padding-bottom: 15px;
-
-    }
-} 
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href='sass/style.css'>
+        <title>OH MY FOOD</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name='description' content="Page presentation d'un restaurant OHMYFOOD">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Crimson+Text:ital,wght@1,600&family=Dancing+Script:wght@700&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a50fc9eb0d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <header>
+        <h1>ohmyfood</h1>
+    </header>
+        <main>
+            <div class='container'>
+                <a href='Lanote.html'>
+                    <section id='menu1'>
+                        <div class='animationloop'>
+                            <i class="fas fa-music"></i>
+                            <h2>La note enchantée</h2>
+                                <h3>MENU</h3>
+                        </div>
+                    </section>
+                </a>
+                <a href='Menu2.html'>
+                    <section id='menu2'>
+                        <div class='animationloop'>
+                            <h2>Le chic à la francaise</h2>
+                            <h3>Menu</h3>
+                        </div>
+                    </section>
+                </a>
+            </div>
+            <div class='container2'>
+                <a href='menu3.html'>
+                    <section id='menu3'>
+                            <div class='animationloop'>
+                                <h2>Le délice des papilles</h2>
+                                <h3>Menu</h3>
+                            </div>
+                    </section>
+                </a>
+                <a href='Menu4.html'>
+                    <section id='menu4'>
+                            <div class='animationloop'>
+                                <h2>La palette du gout</h2>
+                                <h3>Menu</h3>
+                            </div>
+                    </section>
+                </a>
+            </div>
+                <div class='button'>
+                    <button>Prochainement <span class="animation">.</span><span class="animation2">.</span><span class="animation3">.</span></button> 
+                </div>
+            </main>
+    <footer>
+            <a  href="Mentionslégales.html"> Mentions Legales </a>
+            <a id='contact'  href="mailto:nullepart@gmail.com">Contactez-nous</a>
+    </footer>
+    </body>
+</html>
