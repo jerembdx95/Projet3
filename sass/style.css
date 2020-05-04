@@ -29,12 +29,7 @@ header h1 {
   font-family: 'Roboto', sans-serif;
 }
 
-main {
-  width: 100%;
-  position: relative;
-  background-color: white;
-  border: 2px solid white;
-  height: 84.43%;
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,6 +37,23 @@ main {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main {
+  width: 100%;
+  background-color: white;
+  border: 2px solid white;
+  height: 84.43%;
 }
 
 main section {
@@ -75,7 +87,6 @@ main section .fas {
 
 main button {
   font-size: 35px;
-  margin-left: center;
   width: 480px;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -198,6 +209,10 @@ main button .animation3 {
   }
 }
 
+main .button {
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -298,6 +313,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 15px;
 }
 
 footer a {
@@ -553,12 +569,6 @@ article {
   text-align: center;
 }
 
-@media screen and (min-width: 1300px) {
-  main section {
-    margin-right: 70px;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .menu_intitulé {
     margin-left: 4%;
@@ -590,7 +600,7 @@ article {
     margin-right: 30px;
   }
   main button {
-    width: 300px;
+    width: 350px;
     font-size: 20px;
   }
 }
