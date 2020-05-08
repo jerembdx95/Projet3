@@ -65,6 +65,7 @@ main section {
   margin-bottom: 50px;
   -webkit-box-shadow: 1px 1px 10px #555;
           box-shadow: 1px 1px 10px #555;
+  overflow: hidden;
 }
 
 main section h2 {
@@ -87,8 +88,8 @@ main section .fas {
 }
 
 main button {
-  font-size: 35px;
-  width: 480px;
+  font-size: 25px;
+  width: 350px;
   margin-bottom: 40px;
   border-radius: 10px;
   background-color: #579C87;
@@ -96,6 +97,7 @@ main button {
   font-family: 'Roboto', sans-serif;
   -webkit-box-shadow: 1px 1px 10px #555;
           box-shadow: 1px 1px 10px #555;
+  border: none;
 }
 
 main button .animation {
@@ -103,7 +105,7 @@ main button .animation {
           animation: typing 1s steps(5, end) infinite;
   animation-delay: -0.5s;
   -webkit-animation-delay: -0.5s;
-  font-size: 40px;
+  font-size: 15px;
 }
 
 @-webkit-keyframes typing {
@@ -155,7 +157,7 @@ main button .animation2 {
   -webkit-animation-delay: -0.5s;
   animation-delay: 0.75s;
   -webkit-animation-delay: 0.75s;
-  font-size: 40px;
+  font-size: 15px;
 }
 
 @keyframes typing {
@@ -186,7 +188,7 @@ main button .animation3 {
   -webkit-animation-delay: -0.5s;
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
-  font-size: 40px;
+  font-size: 15px;
 }
 
 @keyframes typing {
@@ -216,6 +218,15 @@ main .button {
 
 a {
   text-decoration: none;
+}
+
+.Legals {
+  padding: 40px 40px 40px 40px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
 }
 
 .animationloop {
@@ -591,7 +602,7 @@ article {
     height: 580px;
   }
   button {
-    width: 300px;
+    width: 200px;
     font-size: 25px;
   }
   #menu1 i {
@@ -656,7 +667,7 @@ article {
     font-size: 14px;
   }
   main button {
-    width: 180px;
+    width: 150px;
     font-size: 18px;
     padding-bottom: 15px;
   }
